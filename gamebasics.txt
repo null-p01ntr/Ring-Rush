@@ -1,0 +1,41 @@
+yeni bir ring soforuyuz amacimiz en cok ogrenci toplayarak iste en uzun sure kalmak
+
+t sureli sessionlar
+session sonu gun biter
+puan gun bitince kaydedilir
+ring kopek ezerse veya cani biterse Game Over
+
+
+acilis ekrani:
+	oyuna basla
+	skor
+	tutorial
+
+oyun ici:	
+while (not game over)
+	while(timer!=0)
+		ogrenci topla
+			dailyPoint++
+		ogrenci indir
+			dailyPoint++
+		bariyerlere dikkat
+		kenarlara carptikca can azalt
+	dailyPoint+=totalPoint
+	next day:
+		animasyon oynat
+		puanlari sifirla
+		oyuna don
+
+
+Game Over:
+	print totalPoint
+	isim gir
+	isimle puani kaydet
+
+acilisa don
+
+skor:
+	ilk 5 yuksek skor
+
+help:
+	buttonlarin ve gostergelerin anlami
