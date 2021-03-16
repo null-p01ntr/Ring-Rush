@@ -880,14 +880,14 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2106537499}
-          m_MethodName: Play
-          m_Mode: 1
+          m_MethodName: Loading
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: InGame
+            m_StringArgument: NextDay
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1660016304
@@ -1244,6 +1244,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2106537494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34716d14255e6fb4a836d0e483c924be, type: 3}
+  m_Script: {fileID: 11500000, guid: e663702e3c3019e418b49cdfe65bccf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

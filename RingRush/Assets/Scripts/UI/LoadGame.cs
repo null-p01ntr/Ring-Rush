@@ -7,22 +7,21 @@ public class LoadGame : MonoBehaviour
 {
     AsyncOperation gameLoading;
     public static float progress;
-    public void Loading()
+    public void Loading(string curr_scene)
     {
         SceneManager.LoadSceneAsync("Loading", LoadSceneMode.Additive);
         gameLoading = SceneManager.LoadSceneAsync("InGame", LoadSceneMode.Additive);
 
-        StartCoroutine(GetGameLoad());
+        StartCoroutine(GetGameLoad(curr_scene));
     }
-    public IEnumerator GetGameLoad()
+    public IEnumerator GetGameLoad(string curr_scene)
     {
         while (!gameLoading.isDone)
         {
             progress = Mathf.Clamp01(gameLoading.progress / 0.9f);
-            print(progress.ToString());
             yield return null;
         }
-        SceneManager.UnloadSceneAsync("MainMenu");
+        SceneManager.UnloadSceneAsync(curr_scene);
         SceneManager.UnloadSceneAsync("Loading");
     }
 }
